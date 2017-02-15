@@ -5,15 +5,15 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_loginSignup"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_account_circle_black_24dp"
             android:title="Login/SignUp" />
         <item
             android:id="@+id/nav_prnews"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_comment_black_24dp"
             android:title="Property News" />
         <item
             android:id="@+id/nav_settings"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_settings_black_24dp"
             android:title="Settings" />
 
         <item android:title="Properties"
@@ -21,14 +21,14 @@
             <menu>
                 <item
                     android:id="@+id/nav_suitablefor"
-                    android:icon="@drawable/ic_menu_share"
+                    android:icon="@drawable/ic_check_circle_black_24dp"
                     android:title="Suitable For" />
 
             </menu>
         </item>
         <item
             android:id="@+id/nav_logout"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_perm_identity_black_24dp"
             android:title="Logout" />
     </group>
 
