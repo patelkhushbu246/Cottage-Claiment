@@ -1,11 +1,8 @@
 package com.khushi.win10.cottageclaiment;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -78,16 +75,16 @@ public class SignUp extends AppCompatActivity {
             }
         });
     }
-      public static boolean isValidEmail(CharSequence target)
-    {
+
+    public static boolean isValidEmail(CharSequence target) {
         Pattern pattern;
         Matcher matcher;
-        final String EMAIL_PATTERN="^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
-        pattern=Pattern.compile(EMAIL_PATTERN);
-        matcher=pattern.matcher(target);
+        final String EMAIL_PATTERN = "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
+        pattern = Pattern.compile(EMAIL_PATTERN);
+        matcher = pattern.matcher(target);
         return matcher.matches();
     }
- }
+}
 
 
 

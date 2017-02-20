@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Cottage Claiment</string>
+    <string-array name="name"></string-array>
+    <string-array name="location"></string-array>
+    <string-array name="rating"></string-array>
+    <string-array name="rank"></string-array>
+    <string-array name="price"></string-array>
     <string name="title_activity_home">HomeActivity</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>

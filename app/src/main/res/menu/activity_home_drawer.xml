@@ -11,10 +11,6 @@
             android:id="@+id/nav_prnews"
             android:icon="@drawable/ic_comment_black_24dp"
             android:title="Property News" />
-        <item
-            android:id="@+id/nav_settings"
-            android:icon="@drawable/ic_settings_black_24dp"
-            android:title="Settings" />
 
         <item android:title="Properties"
             android:id="@+id/nav_properties">
@@ -26,6 +22,11 @@
 
             </menu>
         </item>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Settings" />
+
         <item
             android:id="@+id/nav_logout"
             android:icon="@drawable/ic_perm_identity_black_24dp"

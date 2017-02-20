@@ -12,9 +12,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +44,25 @@ public class HomeActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        listView=(ListView)findViewById(R.id.home_listview);
+       // ArrayList<RentDemoModel> arrayList=new ArrayList<>();
+
+        ObjectHolder.rentDemoModel=new ArrayList<>();
+
+        RentDemoModel model=new RentDemoModel();
+        model.setImageViewCottage(R.drawable.mybg1);
+        model.setName("Krishna Cottage");
+        model.setLocation("Ahemdabad,Gujrat,India");
+        model.setRating("rating");
+        model.setRank("4.6/5");
+        model.setPrice("Rs.10000");
+        //arrayList.add(model);
+        ObjectHolder.rentDemoModel.add(model);
+
+        CustomRentAdapter adapter = new CustomRentAdapter(this,ObjectHolder.rentDemoModel);
+        listView.setAdapter(adapter);
+
     }
 
     @Override
@@ -80,7 +103,7 @@ public class HomeActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_loginSignup) {
+      /*  if (id == R.id.nav_loginSignup) {
             // Handle the camera action
         } else if (id == R.id.nav_prnews) {
 
@@ -92,7 +115,7 @@ public class HomeActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_logout) {
 
-        }
+        }*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
