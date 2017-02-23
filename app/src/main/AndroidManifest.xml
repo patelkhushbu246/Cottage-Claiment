@@ -11,7 +11,7 @@
         <activity
             android:name=".LoginActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".SignUp" />
         <activity
             android:name=".HomeActivity"
@@ -19,7 +19,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".RentDetailActivity" />
         <activity
-            android:name=".SpalshActivity"
+            android:name=".SplashActivity"
             android:noHistory="true"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
@@ -28,7 +28,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ForgotPassActivity"></activity>
+        <activity android:name=".ForgotPassActivity" />
+        <activity
+            android:name=".PropertyNewsActivity"
+            android:label="Cottage Claiment" />
+        <activity android:name=".SearchPropertyActivity"></activity>
     </application>
 
 </manifest>

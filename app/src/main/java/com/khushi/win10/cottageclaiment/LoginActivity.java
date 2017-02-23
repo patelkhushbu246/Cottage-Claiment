@@ -91,9 +91,8 @@ public class LoginActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
 
                         handleTextDialog();
-//                        Intent intent=new Intent(LoginActivity.this,ForgotPassActivity.class);
-//
-//                        startActivity(intent);
+                       Intent intent=new Intent(LoginActivity.this,ForgotPassActivity.class);
+                        startActivity(intent);
                         dialog.dismiss();
                     }
                 })

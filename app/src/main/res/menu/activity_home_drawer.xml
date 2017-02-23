@@ -16,9 +16,9 @@
             android:id="@+id/nav_properties">
             <menu>
                 <item
-                    android:id="@+id/nav_suitablefor"
+                    android:id="@+id/nav_searchproperty"
                     android:icon="@drawable/ic_check_circle_black_24dp"
-                    android:title="Suitable For" />
+                    android:title="Search Property" />
 
             </menu>
         </item>

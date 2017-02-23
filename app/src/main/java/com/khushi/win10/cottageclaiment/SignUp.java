@@ -1,5 +1,6 @@
 package com.khushi.win10.cottageclaiment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -35,6 +36,7 @@ public class SignUp extends AppCompatActivity {
         final TextView genderTV = (TextView) findViewById(R.id.TV_gender_TV);
         final RadioButton femaleRB = (RadioButton) findViewById(R.id.RB_female_RB);
         final RadioButton maleRB = (RadioButton) findViewById(R.id.RB_male_RB);
+        final EditText contactnoET=(EditText)findViewById(R.id.ET_contactno_ET);
         Button btnsignup = (Button) findViewById(R.id.btn_signup);
 
         btnsignup.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +55,7 @@ public class SignUp extends AppCompatActivity {
                         maleRB.getText().toString();
                     }
                 }
+                String contactnostr=contactnoET.getText().toString();
                 if (fnstr.isEmpty()) {
                     Toast.makeText(SignUp.this, "Firstname cannot be empty", Toast.LENGTH_SHORT).show();
                 } else if (lnstr.isEmpty()) {
@@ -67,10 +70,15 @@ public class SignUp extends AppCompatActivity {
                     Toast.makeText(SignUp.this, "Please enter confirm password", Toast.LENGTH_SHORT).show();
                 } else if (genderstr.isEmpty()) {
                     Toast.makeText(SignUp.this, "Please select your gender", Toast.LENGTH_SHORT).show();
-                } else if (!cpstr.equals(passwordstr)) {
+                }else if(contactnostr.isEmpty()){
+                    Toast.makeText(SignUp.this, "Please enter contact no", Toast.LENGTH_SHORT).show();
+                }
+                else if (!cpstr.equals(passwordstr)) {
                     Toast.makeText(SignUp.this, "Password dont match", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(SignUp.this, "Successfull!!", Toast.LENGTH_SHORT).show();
+                    Intent intent=new Intent(SignUp.this,HomeActivity.class);
+                    startActivity(intent);
                 }
             }
         });

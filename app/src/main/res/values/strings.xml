@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Cottage Claiment</string>
+    <string name="app_name">Cottage Claimant</string>
     <string-array name="name"></string-array>
     <string-array name="location"></string-array>
     <string-array name="rating"></string-array>

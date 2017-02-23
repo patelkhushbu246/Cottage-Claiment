@@ -28,6 +28,7 @@ public class MainRentListActivity extends AppCompatActivity {
         location=getResources().getStringArray(R.array.location);
         rating=getResources().getStringArray(R.array.rating);
         rank=getResources().getStringArray(R.array.rank);
+        price=getResources().getStringArray(R.array.price);
 
         listView=(ListView)findViewById(R.id.list_one);
 

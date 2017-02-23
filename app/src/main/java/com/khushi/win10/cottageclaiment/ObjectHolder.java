@@ -8,5 +8,6 @@ import java.util.ArrayList;
 
 public class ObjectHolder {
     public  static ArrayList<RentDemoModel> rentDemoModel;
-
+    public static ArrayList<NewsModel> newsModel;
 }
+
