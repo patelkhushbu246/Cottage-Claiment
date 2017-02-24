@@ -5,8 +5,11 @@
     <string-array name="rating"></string-array>
     <string-array name="rank"></string-array>
     <string-array name="price"></string-array>
-    <string name="title_activity_home">HomeActivity</string>
+    <string-array name="title"/>
+    <string-array name="content"/>
 
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_property_news">PropertyNewsActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 

@@ -12,12 +12,8 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:hint="What is your parent name?"
-        android:id="@+id/forget_et_q1" />
+        android:hint="Enter your email"
+        android:id="@+id/forget_et_email" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="what is your school name?"
-        android:id="@+id/forget_et_q2"/>
+
 </LinearLayout>
